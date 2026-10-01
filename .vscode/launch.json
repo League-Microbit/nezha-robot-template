@@ -1,6 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
+        // The two Deploy entries exist so the green Run button (F5) builds and
+        // flashes. All the work is in the preLaunchTask; the "program" is a
+        // script that does nothing, because a launch configuration has to
+        // launch something. The first entry is what F5 runs by default.
+        {
+            "name": "Deploy to micro:bit",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "Deploy to micro:bit (cloud — default)",
+            "program": "${workspaceFolder}/.vscode/noop.js",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "name": "Deploy to micro:bit (local build — Docker required)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "Deploy to micro:bit (local — Docker required)",
+            "program": "${workspaceFolder}/.vscode/noop.js",
+            "internalConsoleOptions": "neverOpen"
+        },
         {
             "name": "Open MakeCode Editor",
             "type": "chrome",

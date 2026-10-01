@@ -1,0 +1,6 @@
+{
+    // Always show the Run button in the status bar at the bottom of the
+    // window, so "Deploy to micro:bit" is one click away without opening the
+    // Run and Debug view. By default it only appears after the first run.
+    "debug.showInStatusBar": "always"
+}

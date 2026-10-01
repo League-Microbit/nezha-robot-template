@@ -29,7 +29,19 @@
             "problemMatcher": []
         },
         {
-            "label": "Deploy to micro:bit",
+            "label": "Deploy to micro:bit (cloud — default)",
+            "type": "shell",
+            "command": "make",
+            "args": ["deploy-cloud"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Deploy to micro:bit (local — Docker required)",
             "type": "shell",
             "command": "make",
             "args": ["deploy"],
