@@ -9,10 +9,10 @@
 SHELL := /bin/bash
 
 # Overridable: make deploy MICROBIT=/Volumes/OTHER, make code PORT=8080
-MICROBIT ?= /Volumes/MICROBIT
+# MICROBIT has no default here: unset, scripts/deploy.sh finds the drive by its
+# label, which is what makes `make deploy` work on Linux as well as macOS.
 PORT     ?= 3232
 
-export MICROBIT
 export PORT
 
 .PHONY: setup build build-cloud deploy deploy-cloud flash code update clean docker-pull help

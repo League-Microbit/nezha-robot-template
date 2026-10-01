@@ -73,7 +73,7 @@ DiffDrive extension from GitHub.
 | `npm run setup` | Install dependencies + PXT target + extension |
 | `npm run build` | Compile locally (uses yotta-compiler Docker image) |
 | `npm run build:cloud` | Compile via MakeCode cloud service (no Docker needed) |
-| `npm run deploy` | Build locally, then flash to `/Volumes/MICROBIT` |
+| `npm run deploy` | Build locally, then flash to the `MICROBIT` drive (macOS or Linux) |
 | `npm run deploy:cloud` | Cloud build, then flash |
 | `npm run code` | Start local MakeCode editor at http://localhost:3232 |
 | `npm run clean` | Remove build artifacts |
