@@ -27,8 +27,7 @@
 // (consonants zvgpt at positions 0/2/4, vowels uoiea at 1/3, first letter
 // most significant), then channel = 11 + n % 73 (11..83) and
 // group = 15 + n % 241 (15..255). The relay's `!N`, mbrelay's registry and
-// robot-console compute the same pair; tools/radio-address-dump runs this
-// exact function against the spec's digest, so change it only with the spec.
+// robot-console compute the same pair, so change it only with the spec.
 // (Until 2026-09-14 this was the retired 25-channel map, 25 + 2*(n % 25).)
 function nameValue(name: string): number {
     const consonants = "zvgpt"
@@ -370,9 +369,6 @@ if (control.deviceName() == "tigez") {
     // already right to better than this method can resolve here, so there is
     // nothing to bake and `setWheelCalibration` is deliberately NOT called.
     // The fleet agrees: gopiv 90.07 mm, vevov 90.03, tigez 90.20 +- 0.14.
-    //
-    // What `calibration.json` claims for tigez -- a 116.05 mm wheel -- is wrong
-    // by 29% and should not be used by anything.
     //
     // The ten runs split into two clusters by how the robot was staged (76.23
     // +- 0.15 by the robot's own return leg, 75.71 +- 0.33 by the camera), and
