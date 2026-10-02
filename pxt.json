@@ -12,17 +12,12 @@
     },
     "files": [
         "README.md",
-        "test/square.ts",
-        "test/circle.ts",
-        "test/calibratej.ts",
-        "test/calibratec.ts",
-        "test/geometry.ts",
-        "test/calstore.ts",
-        "test/provision.ts",
-        "test/runhelp.ts",
-        "test/emitpack.ts",
-        "test/linetrack.ts",
-        "test/boot.ts"
+        "src/linetrack.ts",
+        "src/calwheels.ts",
+        "src/calturn.ts",
+        "src/shapes.ts",
+        "src/fleet.ts",
+        "main.ts"
     ],
     "supportedTargets": [
         "microbit"

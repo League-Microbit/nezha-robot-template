@@ -11,7 +11,7 @@
 # The verb names have now been renamed twice (calx/cala, then calj/calc, now
 # calwheels/calturn). They are quoted in the RELEASE NOTES below, which is what
 # a student reads to know what to run -- rename them here in the same commit
-# that renames them in test/, or a release ships instructions for verbs that
+# that renames them in main.ts, or a release ships instructions for verbs that
 # no longer exist.
 #
 # So the build stamps `calibration-<version>` into the extension's kProfile

@@ -40,8 +40,8 @@
   },
   "include": [
     "pxt-globals.d.ts",
+    "main.ts",
     "src/*.ts",
-    "test/*.ts",
     "pxt_modules/core/*.d.ts",
     "pxt_modules/*/*.ts",
     "pxt_modules/*/src/blocks/*.ts"
