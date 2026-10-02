@@ -1,23 +1,33 @@
-// Demo drives: a 50 cm square and a 30 cm radius circle.
+// The 5x5 pictures the button menu shows.
 
-function driveSquare() {
-    for (let i = 0; i < 4; i++) {
-        basic.showArrow(ArrowNames.North, 0)
-        if (!diffDrive.moveLeg(50, 0)) { diffDrive.reportStopped("square"); return }
-        basic.showArrow(ArrowNames.West, 0)
-        if (!diffDrive.moveLeg(0, 90)) { diffDrive.reportStopped("square"); return }
-    }
-    basic.clearScreen()
-}
+const SHAPE_CIRCLE = images.createImage(`
+    . # # # .
+    # . . . #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)
 
-const CIRCLE_RADIUS = 30  // cm
-const CIRCLE_SEGMENT = CIRCLE_RADIUS * 45 * Math.PI / 180
+const SHAPE_SQUARE = images.createImage(`
+    # # # # #
+    # . . . #
+    # . . . #
+    # . . . #
+    # # # # #
+    `)
 
-function driveCircle() {
-    for (let quarter = 1; quarter <= 4; quarter++) {
-        basic.showNumber(quarter, 0)
-        if (!diffDrive.moveLeg(CIRCLE_SEGMENT, 45)) { diffDrive.reportStopped("circle"); return }
-        if (!diffDrive.moveLeg(CIRCLE_SEGMENT, 45)) { diffDrive.reportStopped("circle"); return }
-    }
-    basic.clearScreen()
-}
+const SHAPE_OUT_AND_BACK = images.createImage(`
+    . . # . .
+    . # # # .
+    . . # . .
+    . # # # .
+    . . # . .
+    `)
+
+const SHAPE_SPIN = images.createImage(`
+    . # # . #
+    # . . # #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)

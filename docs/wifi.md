@@ -45,7 +45,7 @@ follows.
 
 ## No compiled credential fallback
 
-`main.ts` calls `diffDrive.setupRobot()`, which uses
+`src/main.ts` calls `diffDrive.setupRobot()`, which uses
 `enableStoredWifiLink()`, not `setupWifi()`. A new board (or one that has been reflashed) stays
 offline until `WIFICRED SET` writes a credential and the board is reset.
 This prevents a stale or malformed build-time SSID from being retried

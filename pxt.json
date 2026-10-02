@@ -12,12 +12,12 @@
     },
     "files": [
         "README.md",
-        "src/linetrack.ts",
-        "src/calwheels.ts",
-        "src/calturn.ts",
         "src/shapes.ts",
-        "src/fleet.ts",
-        "main.ts"
+        "src/tours/tours.ts",
+        "src/calibration/linetrack.ts",
+        "src/calibration/calwheels.ts",
+        "src/calibration/calturn.ts",
+        "src/main.ts"
     ],
     "supportedTargets": [
         "microbit"
